@@ -6,9 +6,9 @@
 	],
     "settings": {
         "editor.detectIndentation": false,
-        "editor.formatOnSave": true,
         "editor.formatOnPaste": true,
         "editor.snippetSuggestions": "none",
-        "editor.suggest.snippetsPreventQuickSuggestions": false
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.formatOnSave": true
 	}
 }
