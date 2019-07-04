@@ -10,7 +10,6 @@
         "editor.snippetSuggestions": "none",
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.formatOnSave": true,
-        "python.linting.lintOnSave": false,
         "python.linting.flake8Enabled": true,
         "python.linting.pylintEnabled": false
 	}

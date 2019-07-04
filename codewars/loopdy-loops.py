@@ -7,7 +7,7 @@ names = 'riley', 'mhyssa', 'mom', 'scoop'
 nums = 1, 2, 3, 4, 5, 6
 
 
-def make_list(strings, *stringsx):
+def make_list(strings: str, *stringsx):
     _list = []
     for string in strings:
         _list.append(string)
@@ -27,11 +27,11 @@ def list_details(_list, *_lists):
         raise
 
 
-def compare_objects():
-    for i in range(len(ml)):
-        if i in nums:
-            print(f'{i} is in {nums}')
-            print(f'{i} is at nums[{nums[i]}]')
+def list_compare(_list_one: list, _list_two: list):
+    for i in range(len(_list_one)):
+        if i in range(len(_list_two)):
+            print(f'{i} is in {_list_one}')
+            print(f'{i} is at list two: [{_list_two[i]}]')
         else:
             print(f'{i} is not in {nums}')
 
@@ -44,3 +44,5 @@ print(f"""
       names_list: {names_list}
       nums_list : {nums_list}
       """)
+
+list_compare(names_list, nums_list)
