@@ -6,7 +6,6 @@
 import os
 from whoosh.index import create_in
 from whoosh.fields import Schema, TEXT
-import sys
 
 
 def createSearchableData(root):
