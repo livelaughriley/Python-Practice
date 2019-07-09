@@ -7,11 +7,16 @@
     "settings": {
         "editor.detectIndentation": false,
         "editor.formatOnPaste": true,
-        "editor.snippetSuggestions": "none",
-        "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.formatOnSave": true,
         "python.linting.flake8Enabled": true,
         "python.linting.pylintEnabled": false,
-        "files.defaultLanguage": "python"
+        "files.defaultLanguage": "python",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": true,
+            "strings": false
+        },
+        "workbench.editor.swipeToNavigate": true
 	}
 }
