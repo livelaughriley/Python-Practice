@@ -17,6 +17,7 @@
             "comments": true,
             "strings": false
         },
-        "workbench.editor.swipeToNavigate": true
+        "workbench.editor.swipeToNavigate": true,
+        "code-runner.fileDirectoryAsCwd": true
 	}
 }
