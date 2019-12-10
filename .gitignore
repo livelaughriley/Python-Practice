@@ -6,3 +6,4 @@ tempCodeRunner
 temp.*
 temp/
 *temp*/
+.Rproj.user
