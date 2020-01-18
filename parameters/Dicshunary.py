@@ -4,24 +4,20 @@
 
 class Overlay:
 
-    def __init__(self, name: str = "", num_fields: int = 0):
-        self.name = name
-        self.num_fields = num_fields
+    def __init__(self, prefix: str = "", fields: list = []):
+        self.prefix = prefix
+        self.fields = fields
 
-    def categorize(prefixes: list = [], fields: list = []):
-        category = {}
-        for prefix in prefixes:
-            for field in fields:
-                category[prefix] = field
-                fields.remove(field)
-        return category
+    def add_field(self, field):
+        self.fields.append(field)
 
 
-dish = {
-    "Education": ["Class Year", "Degree"],
-    "Donor": ["Donor Status", "Lifetime Giving"]
-}
+donor = Overlay(prefix="Donor")
+donor.fields = ["Donor Status"]
+print(donor.prefix, donor.fields)
 
+donor.add_field("Lifetime Giving")
+print(donor.fields)
 
-# dish["Location"] = ["Country", "State"]
-# print(dish)
+for i in donor.fields:
+    print(f"{donor.prefix}: {i}")
