@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 
-def group_overlays(groups: list, overlays: list):
+def group_overlays(groups: list = [], overlays: list = []):
     x = {}
     for group in groups:
         for overlay in overlays:
